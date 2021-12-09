@@ -23,6 +23,6 @@ jobs:
       - name: Create release
         run: |
           zip -r CheDocs.zip CheDocs
-          gh release create v$GITHUB_RUN_NUMBER 'RedHat.zip'
+          gh release create v$GITHUB_RUN_NUMBER 'CheDocs.zip'
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
