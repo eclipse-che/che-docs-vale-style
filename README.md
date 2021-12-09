@@ -1,0 +1,2 @@
+# CheDocs
+CheDocs Vale style
