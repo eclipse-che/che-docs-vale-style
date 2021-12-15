@@ -1,8 +1,9 @@
 ---
 extends: substitution
-message: Use '%s' instead of '%s.'
+message: Use the AsciiDoc attribute %s rather than '%s.'
 level: error
 ignorecase: true
+scope: sentence
 swap:
   prod-shor: prod-short
   '\s[^[:punct:]]devworkspace[^[:punct:]\.]': "{devworkspace}"
