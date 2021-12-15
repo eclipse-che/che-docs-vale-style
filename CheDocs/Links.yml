@@ -5,3 +5,6 @@ ignorecase: true
 swap:
   \slink\:https\://www.eclipse.org\S*\s: link:{site-baseurl}che-7/
   \shttps\://www.eclipse.org\S*\s: link:{site-baseurl}che-7/
+  github.com/eclipse/che/blob: github.com/eclipse-che/che-server/blob
+  github.com/eclipse/che/tree: github.com/eclipse-che/che-server/tree
+  github.com/eclipse/che-theia: github.com/eclipse-che/che-theia
