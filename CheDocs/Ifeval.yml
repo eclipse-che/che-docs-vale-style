@@ -1,0 +1,7 @@
+---
+extends: existence
+level: warning
+message: "Consider using an AsciiDoc attribute for inline content or an example for block content, rather than an 'ifeval' directive."
+scope: raw
+raw:
+  - 'ifeval\:\:\['
