@@ -1,5 +1,53 @@
+:toc:
 # CheDocs Vale style
 
-This repository hosts the _CheDocs_ Vale style initially created on link:https://github.com/eclipse/che-docs/[Eclipse Che Documentation Git repsitory].
+This repository hosts the _CheDocs_ Vale style.
 
-To use it with the Vale GitHub action, see xref:.github/workflows/vale.yml[workflow configuration file].
+This style contains additional rules to the link:https://vale.sh/hub/redhat/[`RedHat` Vale style], intended for:
+
+* link:https://github.com/eclipse-che/che-docs/[Eclipse Che documentation Git repository]
+* link:https://github.com/eclipse-che/blog/[Eclipse Che blog Git repository]
+
+== Adding the `CheDocs` Vale style to your project
+
+.Procedure
+. Reference the `CheDocs` Vale package in your Vale configuration file:
++
+.`.vale.ini`
+[source,ini]
+----
+StylesPath = styles
+MinAlertLevel = suggestion
+
+Packages = RedHat, https://github.com/eclipse-che/che-docs-vale-style/releases/latest/download/CheDocs.zip
+
+[*]
+BasedOnStyles = RedHat, CheDocs
+----
+
+. Synchronize your Vale packages:
++
+[source,commandline]
+----
+$ vale sync
+----
+
+. Run vale on your files:
++
+[source,commandline]
+----
+$ vale .
+----
+
+== Using Che Docs Vale style using the Vale GitHub Action
+
+.Additional resources
+
+.Procedure
+* Add the link:https://github.com/eclipse-che/che-docs-vale-style/.github/workflows/vale.yml[`.github/workflows/vale.yml` GitHub worklow] to your project:
++
+.`.github/workflows/vale.yml`
+[source,yaml]
+----
+include::.github/workflows/vale.yml[]
+----
