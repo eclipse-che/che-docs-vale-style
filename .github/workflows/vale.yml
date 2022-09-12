@@ -23,9 +23,9 @@ jobs:
           fail_on_error: true
           files: all
           version: latest
-          # github-pr-check, github-pr-review, github-check
-          # reporter: github-check
-          # added, diff_context, file, nofilter
+#           github-pr-check, github-pr-review, github-check
+#          reporter: github-check
+#           added, diff_context, file, nofilter
           filter_mode: added
           vale_flags: "--glob='*.{adoc,ini,md,txt}'"
         env:
