@@ -10,7 +10,6 @@
 name: Linting with Vale
 on:
   - pull_request
-  - pull_request_target
 jobs:
   vale:
     name: Linting with Vale
