@@ -1,9 +1,9 @@
 :toc:
-# _CheDocs_ Vale style
+# Vale style for Eclipse Che documentation and blog
 
 This repository hosts the _CheDocs_ Vale style.
 
-This style contains additional rules to the link:https://vale.sh/hub/redhat/[_RedHat_ Vale style], intended for:
+This style has additional rules to the link:https://vale.sh/hub/redhat/[_RedHat_ Vale style], intended for:
 
 * link:https://github.com/eclipse-che/che-docs/[Eclipse Che documentation Git repository]
 * link:https://github.com/eclipse-che/blog/[Eclipse Che blog Git repository]
@@ -16,12 +16,12 @@ This style contains additional rules to the link:https://vale.sh/hub/redhat/[_Re
 .`.vale.ini`
 [source,ini]
 ----
-StylesPath = styles
+StylesPath = .github/styles
 MinAlertLevel = suggestion
 
 Packages = RedHat, https://github.com/eclipse-che/che-docs-vale-style/releases/latest/download/CheDocs.zip
 
-[*]
+[*.adoc]
 BasedOnStyles = RedHat, CheDocs
 ----
 
@@ -39,15 +39,6 @@ $ vale sync
 $ vale .
 ----
 
-== Using _CheDocs_ Vale style using the Vale GitHub Action
-
 .Additional resources
-
-.Procedure
-* Add the link:https://github.com/eclipse-che/che-docs-vale-style/.github/workflows/vale.yml[`.github/workflows/vale.yml` GitHub worklow] to your project:
-+
-.`.github/workflows/vale.yml`
-[source,yaml]
-----
-include::.github/workflows/vale.yml[]
-----
+* Consider adapting our link:https://github.com/eclipse-che/che-docs-vale-style/blob/main/.vale.ini[Vale configuration file].
+* Consider adopting the link:https://github.com/errata-ai/vale-action[GitHub Action for Vale].
