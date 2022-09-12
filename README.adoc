@@ -1,6 +1,8 @@
 :toc:
 # Vale style for Eclipse Che documentation and blog
 
+This word generates an error: plugin.
+
 This repository hosts the _CheDocs_ Vale style.
 
 This style has additional rules to the link:https://vale.sh/hub/redhat/[_RedHat_ Vale style], intended for:
@@ -40,5 +42,5 @@ $ vale .
 ----
 
 .Additional resources
-* Consider adapting our link:https://github.com/eclipse-che/che-docs-vale-style/blob/main/.vale.ini[Vale configuration file].
+* Consider adopting and adapting our link:https://github.com/eclipse-che/che-docs-vale-style/blob/main/.vale.ini[Vale configuration file].
 * Consider adopting the link:https://github.com/errata-ai/vale-action[GitHub Action for Vale].
