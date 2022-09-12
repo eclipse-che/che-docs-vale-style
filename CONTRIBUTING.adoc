@@ -1,0 +1,3 @@
+= Contributing to CheDocs Vale style
+
+Open a pull request to the Git repository.
