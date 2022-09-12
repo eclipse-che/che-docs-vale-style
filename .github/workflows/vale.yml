@@ -10,6 +10,7 @@
 name: Linting with Vale
 on:
   - pull_request
+  - pull_request_target
 jobs:
   vale:
     name: Linting with Vale
@@ -21,13 +22,6 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           fail_on_error: true
-          files: all
-          version: latest
-#           github-pr-check, github-pr-review, github-check
-#          reporter: github-check
-#           added, diff_context, file, nofilter
-          filter_mode: added
-          vale_flags: "--glob='*.{adoc,ini,md,txt}'"
         env:
           # Required, set by GitHub actions automatically:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
