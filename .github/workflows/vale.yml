@@ -24,7 +24,7 @@ jobs:
           files: all
           version: latest
           # github-pr-check, github-pr-review, github-check
-          reporter: github-check
+          # reporter: github-check
           # added, diff_context, file, nofilter
           filter_mode: added
           vale_flags: "--glob='*.{adoc,ini,md,txt}'"
