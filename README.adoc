@@ -40,5 +40,5 @@ $ vale .
 ----
 
 .Additional resources
-* Consider adapting our link:https://github.com/eclipse-che/che-docs-vale-style/blob/main/.vale.ini[Vale configuration file].
+* Consider adopting and adapting our link:https://github.com/eclipse-che/che-docs-vale-style/blob/main/.vale.ini[Vale configuration file].
 * Consider adopting the link:https://github.com/errata-ai/vale-action[GitHub Action for Vale].
