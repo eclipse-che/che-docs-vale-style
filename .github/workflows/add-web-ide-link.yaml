@@ -16,7 +16,7 @@ on:
 jobs:
   add-link:
     name: Add Web IDE link
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Web IDE Pull Request Check
         id: try-in-web-ide
